@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Things I Done Did</title>
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="css/layout.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>a
+	<![endif]-->
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+
+			init: function () {
+
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixItUp({
+					selectors: {
+						target: '.portfolio',
+						filter: '.filter'	
+					},
+					load: {
+						filter: '.illustration, .games, .web'  
+					}     
+				});								
+
+			}
+
+		};
+		
+		filterList.init();
+		
+		
+	});	
+	</script>
+
+
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
+  _paq.push(["setCookieDomain", "*.talyara.com"]);
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="//piwik.franga2000.com/";
+    _paq.push(['setTrackerUrl', u+'matomo.php']);
+    _paq.push(['setSiteId', '6']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<noscript><p><img src="//piwik.franga2000.com/matomo.php?idsite=6&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+<!-- End Matomo Code -->
+
+
+
+</head>
+<body>
+
+<header id="info">
+	
+</header>	
+
+	<main class="container">
+
+		<ul id="filters" class="clearfix">
+			<li><span class="filter active" data-filter=".illustration, .games, .web">All</span></li>
+			<li><span class="filter" data-filter=".illustration">Illustration</span></li>
+			<li><span class="filter" data-filter=".games">Video games</span></li>
+			<li><span class="filter" data-filter=".web">Web</span></li>
+		</ul>
+
+		<div id="portfoliolist">
+		
+			<div class="portfolio games" data-cat="games"> <!--angler-->
+				<div class="graphic vertical">
+					<img src="img/notification_game_thumbnail.JPG">
+				</div>
+				<div class="content">
+					<h3>Too many notifications</h3>
+					<p class="meta">March 13-16 2020</p>
+					<p>Mock Instagram posts for a game at the Quarantine Jam game jam</p>
+					<a class="button" href="https://niirb.itch.io/life-notification-game">Game</a>
+					<a class="button" href="files/IGPosts.html">Posts</a>
+				</div>
+			</div>	
+
+			<div class="portfolio illustration" data-cat="illustration"> <!--dino-->
+				<div class="graphic vertical">
+					<img src="img/dino_thumbnail.png">
+				</div>
+				<div class="content">
+					<h3>Dinosaur in a lab coat</h3>
+					<p class="meta">August 2019</p>
+					<p>Mascot for the Xtinct vol. 1 dubstep event</p>
+					<a class="button" href="files/Dino-FINAL.png">Full resolution</a>
+				</div>
+			</div>
+			
+			
+			<div class="portfolio games" data-cat="games"> <!--angler-->
+				<div class="graphic vertical">
+					<img src="img/angler_thumbnail.png">
+				</div>
+				<div class="content">
+					<h3>Angler Anxiety</h3>
+					<p class="meta">February 23-25 2020</p>
+					<p>Character sprites made for the Alakajam 2020 game jam</p>
+					<a class="button" href="https://alakajam.com/8th-alakajam/891/angler-anxiety/">Game</a>
+					<a class="button" href="files/AnglerAnxiety_ArtSheet.png">Art sheet</a>
+				</div>
+			</div>	
+				
+				
+			<div class="portfolio illustration" data-cat="illustration"> <!--poison-->
+				<div class="graphic vertical">
+					<img src="img/poison_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Poison</h3>
+					<p class="meta">October 3 2017</p>
+					<p>Inktober 2017, day 3 - Poison</p>
+					<a class="button" href="files/poison.jpg">Full resolution</a>
+					<a class="button" href="files/poison.svg">Vectorized</a>
+				</div>
+			</div>
+			
+			
+			<div class="portfolio illustration" data-cat="illustration"> <!--wings-->
+				<div class="graphic vertical">
+					<img src="img/wings_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Wings</h3>
+					<p class="meta">October 7 2017</p>
+					<p>Inktober 2017, day 7 - Wings</p>
+					<a class="button" href="files/wings.jpg">Full resolution</a>
+				</div>
+			</div>
+			
+			
+			<div class="portfolio illustration" data-cat="illustration"> <!--heir-->
+				<div class="graphic vertical">
+					<img src="img/v_heir_of_space_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Heir of Space</h3>
+					<p class="meta">January 2018</p>
+					<p>Original character illustration</p>
+					<a class="button" href="files/v_heir_of_space.jpg">Full resolution</a>
+				</div>
+			</div>
+			
+			
+			<div class="portfolio illustration" data-cat="illustration"> <!--villain-->
+				<div class="graphic vertical">
+					<img src="img/v_villain_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Villain</h3>
+					<p class="meta">October 1 2018</p>
+					<p>Original character redesigned as a villain</p>
+					<a class="button" href="files/v_villain.jpg">Full resolution</a>
+				</div>
+			</div>
+			
+			<div class="portfolio illustration" data-cat="illustration"> <!--superhero-->
+				<div class="graphic vertical">
+					<img src="img/v_superhero_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Superhero</h3>
+					<p class="meta">October 2 2018</p>
+					<p>Original character redesigned as a superhero</p>
+					<a class="button" href="files/v_superhero.jpg">Full resolution</a>
+				</div>
+			</div>
+			
+			
+			<div class="portfolio illustration" data-cat="illustration"> <!--shopkeep-->
+				<div class="graphic vertical">
+					<img src="img/v_shopkeep_thumbnail.jpg">
+				</div>
+				<div class="content">
+					<h3>Shopkeep</h3>
+					<p class="meta">October 3 2018</p>
+					<p>Original character redesigned as a shopkeep</p>
+					<a class="button" href="files/v_shopkeep.jpg">Full resolution</a>
+				</div>
+			</div>
+			
+			</div>
+							
+			
+		</div>
+		
+	</div><!-- container -->
+
+</body>
+</html>

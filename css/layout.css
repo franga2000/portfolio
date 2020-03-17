@@ -1,0 +1,176 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+	overflow-y: scroll;
+}
+
+body {
+	font-family: Helvetica, Arial, Verdana;
+	background: #efefef url('../img/ticks.png') repeat 0 0;
+	margin: 0;
+	padding: 15px;
+	font-size:12px;
+	min-height: 100vh;
+}
+
+.container { 
+	position: relative; 
+	width: 960px; 
+	margin: 0 auto; 
+	-webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;	
+}
+ 
+#filters {
+	margin:1%;
+	padding:0;
+	list-style:none;
+}
+
+	#filters li {
+		float:left;
+	}
+	
+	#filters li span {
+		display: block;
+		padding:5px 20px;		
+		text-decoration:none;
+		color:#666;
+		cursor: pointer;
+	}
+	
+	#filters li span.active {
+		background: #e95a44;
+		color:#fff;
+	}
+ 
+
+#portfoliolist {
+	
+}
+
+ 
+#portfoliolist .portfolio {
+	width: calc(50% - 40px);
+	margin: 10px;
+	display:none;
+	overflow:hidden;
+}
+
+	.portfolio {
+		background-color: #FFF;
+		width: 100%;
+		height: 200px;
+		display: inline-flex;
+		flex-direction: rows;
+		float: left;
+	}
+	
+	.portfolio .graphic {
+		background-color: gray;
+		flex: 0;
+		
+	}
+	
+	.portfolio .graphic.vertical > * {
+		max-height: 200px;
+	}
+	
+	.portfolio .content {
+		flex: 1;
+		padding: 10px;
+		
+	}
+	
+	.portfolio:hover .label {
+    bottom:0;
+  }
+	.portfolio:hover img {
+    top:-30px;
+  }  
+ 
+
+.button {
+	display: inline-block;
+	padding: 5px 15px;
+	text-decoration: none;
+	background: #e95a44;
+	color:#fff;
+	cursor: pointer;
+	float: right;
+}
+
+.button:not(:first-child) {
+	margin-right: 5px;
+}
+	
+.button:hover {
+	background: #d94a34;
+}
+	
+
+
+
+/* Tablet (Portrait) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	.container {
+		width: 768px; 
+	}
+}
+
+
+/*  Mobile (Portrait) - Note: Design for a width of 320px */
+@media only screen and (max-width: 767px) {
+	.container { 
+		width: 95%; 
+	}
+	
+	#portfoliolist .portfolio {
+		width:48%;
+		margin:1%;
+	}
+	
+}
+
+
+/* #Mobile (Landscape) - Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	.container {
+		width: 70%;
+	}
+	
+}
+
+/* Clearing */
+
+.container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
+
+.clearfix:before,
+.clearfix:after,
+.row:before,
+.row:after {
+  content: '\0020';
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0; }
+.row:after,
+.clearfix:after {
+  clear: both; }
+.row,
+.clearfix {
+  zoom: 1; }
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
